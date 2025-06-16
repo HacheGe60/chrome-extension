@@ -10,5 +10,5 @@ inputBtn.addEventListener("click", function () {
 
 
 for (let i = 0; i < myLeads.length; i++) {
-    console.log(myLeads[i]);
+    ulEl.innerHTML += `<li>${myLeads[i]}</li>`;
 }
