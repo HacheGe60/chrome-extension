@@ -1,4 +1,10 @@
-const myLeads = [];
+let myLeads = `["www.google.com"]`;
+
+myLeads = JSON.parse(myLeads);
+myLeads.push("www.facebook.com");
+myLeads = JSON.stringify(myLeads);
+console.log(myLeads);
+
 const inputEl = document.querySelector("#input-el");
 const inputBtn = document.querySelector("#input-btn");
 const ulEl = document.querySelector("#ul-el");
